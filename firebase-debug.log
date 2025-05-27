@@ -1,0 +1,27 @@
+[debug] [2025-03-04T06:03:55.652Z] ----------------------------------------------------------------------
+[debug] [2025-03-04T06:03:55.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\GT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2025-03-04T06:03:55.656Z] CLI Version:   13.0.3
+[debug] [2025-03-04T06:03:55.656Z] Platform:      win32
+[debug] [2025-03-04T06:03:55.656Z] Node Version:  v20.11.0
+[debug] [2025-03-04T06:03:55.656Z] Time:          Tue Mar 04 2025 11:33:55 GMT+0530 (India Standard Time)
+[debug] [2025-03-04T06:03:55.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-04T06:03:55.660Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-03-04T06:03:55.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-04T06:03:55.784Z] > authorizing via signed-in user (solutionsbluesap@gmail.com)
+[debug] [2025-03-04T06:03:55.784Z] [iam] checking project national-gold-and-pawn for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-04T06:03:55.785Z] > refreshing access token with scopes: []
+[debug] [2025-03-04T06:03:55.786Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-04T06:03:55.786Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-04T06:03:56.045Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-04T06:03:56.045Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-04T06:03:56.063Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/national-gold-and-pawn:testIamPermissions [none]
+[debug] [2025-03-04T06:03:56.063Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/national-gold-and-pawn:testIamPermissions x-goog-quota-user=projects/national-gold-and-pawn
+[debug] [2025-03-04T06:03:56.063Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/national-gold-and-pawn:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-04T06:03:56.426Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-03-04T06:03:56.426Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-03-04T06:03:57.573Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/national-gold-and-pawn:testIamPermissions 200
+[debug] [2025-03-04T06:03:57.574Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/national-gold-and-pawn:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-04T06:03:57.576Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/national-gold-and-pawn [none]
+[debug] [2025-03-04T06:03:58.050Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/national-gold-and-pawn 200
+[debug] [2025-03-04T06:03:58.050Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/national-gold-and-pawn {"projectId":"national-gold-and-pawn","projectNumber":"313805858817","displayName":"national gold and pawn","name":"projects/national-gold-and-pawn","resources":{"hostingSite":"national-gold-and-pawn"},"state":"ACTIVE","etag":"1_298e58e4-0681-4ce5-8773-e032b14bb90e"}

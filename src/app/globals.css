@@ -1,0 +1,169 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --primary: #c2963a;
+  --secondary: #a6662e;
+  --tertiary: #bb4545;
+  --lightgold: #ffc617;
+  --baseblack: #01030a;
+  --approxblack: #1e1e1e;
+  --basewhite: #f2f2f2;
+  --red: #eb2a1d;
+  --blue: #1d46eb;
+}
+
+/* // @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #0a0a0a;
+//     --foreground: #ededed;
+//   }
+// } */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 18px;
+  overflow-x: clip;
+  /* contain: paint; */
+  color: var(--basewhite);
+  background-color: var(--baseblack);
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+dl,
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+/**** Scrollbar *****/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  /* background-color: var(--basewhite); */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: var(--approxblack); */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #888;
+}
+
+/******* Hide Scrollbar *******/
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* .linear-gradient-border {
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    180deg,
+    #c2963a 0%,
+    #01030a 100%
+  ) !important;
+  border-radius: 15px !important;
+  border-image-slice: 1 !important;
+} */
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 2rem !important;
+  overflow: hidden !important;
+} */
+
+.swiper-slide img {
+  display: block;
+  width: 400px !important;
+  height: 400px !important;
+  border-radius: 2rem !important;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+.gradient-border-wrapper {
+  padding: 1px;
+  background: linear-gradient(180deg, #c2963a 0%, #01030a 100%);
+}
+
+.service-card-bg {
+  background: linear-gradient(180deg, #161616 0%, #01030a 100%);
+}
+
+.outline-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #bb454566;
+}

@@ -1,0 +1,135 @@
+"use client";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HeaderLinkButton, LinkButton } from "./button";
+import logo from "@/assets/images/logo.webp";
+import Image from "next/image";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const menuItems = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/what-we-buy", label: "What We Buy" },
+    { href: "/pawn-process", label: "Pawn Process" },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 300) {
+          setIsHeaderVisible(false);
+        } else {
+          setIsHeaderVisible(true);
+        }
+        setLastScrollY(currentScrollY);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
+  return (
+    <header
+      className={`fixed left-1/2 -translate-x-1/2 top-4 md:top-7 w-[90%] md:max-w-[90%] z-50 transition-transform duration-300 ${
+        isHeaderVisible
+          ? "translate-y-0"
+          : "-translate-y-[120px] xl:-translate-y-[140px]"
+      }`}
+    >
+      <div className="rounded-lg backdrop-blur-lg bg-white/20 border border-white/20 w-full">
+        <div className="flex gap-2 xxs:gap-3 xs:gap-4 items-center justify-between px-2 xxs:px-3 xs:px-4 py-1 md:py-2 lg:py-1.5 4xl:py-3">
+          <Link href="/" className="font-bold text-xl xxs:text-2xl">
+            <Image
+              src={logo}
+              className="object-contain w-[120px] h-[40px] md:w-[200px] md:h-[50px] 2xl:w-[250px] 2xl:h-[70px]"
+              alt="National Gold and Pawn | Diamonds, Watches, Jewelry"
+              title="National Gold and Pawn | Diamonds, Watches, Jewelry"
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:block">
+            <div className="backdrop-blur-lg bg-white/20 border border-white/20 rounded-lg overflow-hidden gap-0 2xl:gap-0 flex items-center">
+              {menuItems.map((item) => (
+                <HeaderLinkButton
+                  key={item?.href}
+                  href={item?.href}
+                  className={"rounded-none"}
+                >
+                  {item?.label}
+                </HeaderLinkButton>
+              ))}
+            </div>
+          </nav>
+
+          {/* Contact Button - Desktop */}
+          <LinkButton
+            href="/contact"
+            className="hidden lg:flex !py-0 lg:!h-[2.2rem] 4xl:!h-[3rem]"
+          >
+            Contact
+          </LinkButton>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden p-1.5 xxs:p-2 hover:bg-white/10 rounded-full transition-colors"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="w-5 h-5 xxs:w-6 xxs:h-6" />
+            ) : (
+              <Menu className="w-5 h-5 xxs:w-6 xxs:h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="lg:hidden overflow-hidden"
+            >
+              <nav className="px-2 xxs:px-3 xs:px-4 py-2 flex flex-col gap-2">
+                {menuItems.map((item) => (
+                  <HeaderLinkButton
+                    key={item?.href}
+                    href={item?.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-full justify-center rounded-lg"
+                  >
+                    {item?.label}
+                  </HeaderLinkButton>
+                ))}
+                <LinkButton
+                  href="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="w-full justify-center"
+                >
+                  Contact
+                </LinkButton>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
