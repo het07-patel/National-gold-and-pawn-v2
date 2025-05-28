@@ -1,23 +1,50 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HeaderLinkButton, LinkButton } from "./button";
 import logo from "@/assets/images/logo.webp";
 import Image from "next/image";
+import { useDispatch,useSelector } from "react-redux";
+import {setIsMenuOpen,setIsWhatWeBuyDropDownOpen,} from "@/store/slices/commonSlice";
+import { DropDown } from "./dynamiComponents";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const dispatch = useDispatch();
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const {isMenuOpen,isWhatwebuyDropDownOpen}=useSelector(({ common }) => common);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => dispatch(setIsMenuOpen(!isMenuOpen));
 
-  const menuItems = [
+  const whatWeBuyDropDownList = [
+     {
+      href: "/what-we-buy/gold-silver-platinum",
+      title: "Gold, Silver and Platinum",
+    },
+    {
+      href: "/what-we-buy/coins",
+      title: "Coins",
+    },
+    { href: "/what-we-buy/diamond-and-jewelry", title: "Diamond and Jewelry" },
+   
+    { href: "/what-we-buy/watches", title: "Watches " },
+    {
+      href: "/what-we-buy/electronics-and-tools",
+      title: "Electronics and Tools",
+    },  
+  ];
+
+  const menuList = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/what-we-buy", label: "What We Buy" },
+    {
+      label: "What We Buy",
+      dropDown: whatWeBuyDropDownList,
+      isDropDownOpen: isWhatwebuyDropDownOpen,
+      setIsDropDownOpen: (value) => dispatch(setIsWhatWeBuyDropDownOpen(value)),
+    },
     { href: "/pawn-process", label: "Pawn Process" },
   ];
 
@@ -27,6 +54,7 @@ const Header = () => {
         const currentScrollY = window.scrollY;
         if (currentScrollY > lastScrollY && currentScrollY > 300) {
           setIsHeaderVisible(false);
+          dispatch(setIsWhatWeBuyDropDownOpen(false));
         } else {
           setIsHeaderVisible(true);
         }
@@ -38,6 +66,10 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
+
+  const closeAllDropdown = useCallback(() => {
+    dispatch(setIsMenuOpen(false));
+  }, [dispatch]);
 
   return (
     <header
@@ -60,16 +92,28 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block">
-            <div className="backdrop-blur-lg bg-white/20 border border-white/20 rounded-lg overflow-hidden gap-0 2xl:gap-0 flex items-center">
-              {menuItems.map((item) => (
-                <HeaderLinkButton
-                  key={item?.href}
-                  href={item?.href}
-                  className={"rounded-none"}
-                >
-                  {item?.label}
-                </HeaderLinkButton>
-              ))}
+            <div className="backdrop-blur-lg bg-white/20 border border-white/20 gap-0 2xl:gap-0 flex items-center">
+              {menuList.map((item) =>
+                item.dropDown ? (
+                  <div key={item.label}>
+                    <DropDown
+                      title={item.label}
+                      menuList={item.dropDown}
+                      onToggle={() => setIsMenuOpen(false)}
+                      isDropDownOpen={item.isDropDownOpen}
+                      setIsDropDownOpen={item.setIsDropDownOpen}
+                    />
+                  </div>
+                ) : (
+                  <HeaderLinkButton
+                    key={item?.label}
+                    href={item?.href}
+                    onClick={closeAllDropdown}
+                  >
+                    {item?.label}
+                  </HeaderLinkButton>
+                )
+              )}
             </div>
           </nav>
 
@@ -106,16 +150,26 @@ const Header = () => {
               className="lg:hidden overflow-hidden"
             >
               <nav className="px-2 xxs:px-3 xs:px-4 py-2 flex flex-col gap-2">
-                {menuItems.map((item) => (
-                  <HeaderLinkButton
-                    key={item?.href}
-                    href={item?.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="w-full justify-center rounded-lg"
-                  >
-                    {item?.label}
-                  </HeaderLinkButton>
-                ))}
+                {menuList.map((item) =>
+                  item.dropDown ? (
+                    <DropDown
+                      key={item.label}
+                      title={item.label}
+                      menuList={item.dropDown}
+                      isDropDownOpen={item.isDropDownOpen}
+                      setIsDropDownOpen={item.setIsDropDownOpen}
+                    />
+                  ) : (
+                    <HeaderLinkButton
+                      key={item?.label}
+                      href={item?.href}
+                      onClick={() => dispatch(setIsMenuOpen(false))}
+                      className="w-full justify-center rounded-lg"
+                    >
+                      {item?.label}
+                    </HeaderLinkButton>
+                  )
+                )}
                 <LinkButton
                   href="/contact"
                   onClick={() => setIsMenuOpen(false)}
