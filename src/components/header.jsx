@@ -79,7 +79,7 @@ const Header = () => {
           : "-translate-y-[120px] xl:-translate-y-[140px]"
       }`}
     >
-      <div className="rounded-lg backdrop-blur-lg bg-white/20 border border-white/20 w-full">
+      <div className="backdrop-blur-lg bg-white/20 border border-white/20 w-full">
         <div className="flex gap-2 xxs:gap-3 xs:gap-4 items-center justify-between px-2 xxs:px-3 xs:px-4 py-1 md:py-2 lg:py-1.5 4xl:py-3">
           <Link href="/" className="font-bold text-xl xxs:text-2xl">
             <Image
@@ -92,7 +92,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block">
-            <div className="backdrop-blur-lg bg-white/20 border border-white/20 gap-0 2xl:gap-0 flex items-center">
+            <div className="backdrop-blur-lg bg-white/20 border border-white/20 rounded-lg  gap-0 2xl:gap-0 flex items-center ">
               {menuList.map((item) =>
                 item.dropDown ? (
                   <div key={item.label}>
@@ -127,7 +127,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-1.5 xxs:p-2 hover:bg-white/10 rounded-full transition-colors"
+            className="lg:hidden p-1.5 xxs:p-2 hover:bg-white/10 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -147,7 +147,7 @@ const Header = () => {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden overflow-hidden"
+              className="lg:hidden"
             >
               <nav className="px-2 xxs:px-3 xs:px-4 py-2 flex flex-col gap-2">
                 {menuList.map((item) =>
@@ -164,7 +164,7 @@ const Header = () => {
                       key={item?.label}
                       href={item?.href}
                       onClick={() => dispatch(setIsMenuOpen(false))}
-                      className="w-full justify-center rounded-lg"
+                      className="w-full justify-center"
                     >
                       {item?.label}
                     </HeaderLinkButton>

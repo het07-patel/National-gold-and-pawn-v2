@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import CustomImage from "./customImage";
 import { Button } from "./button";
 import visit from "@/assets/images/visit.webp";
 import { motion, useAnimation } from "framer-motion";
@@ -41,7 +41,7 @@ const VisitUs = () => {
       className={`relative rounded-xl 2xl:rounded-[30px] overflow-hidden mt-5 bottom-[-20px]  2xl:bottom-[-43]`}
     >
       {/* Background Image */}
-      <Image
+      <CustomImage
         src={visit}
         alt="National Gold and Pawn | Diamonds, Watches, Jewelry"
         title="National Gold and Pawn | Diamonds, Watches, Jewelry"

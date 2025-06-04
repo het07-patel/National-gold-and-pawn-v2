@@ -50,7 +50,7 @@ export const HeaderLinkButton = ({ href = "", className = "", ...rest }) => {
     <Link
       href={href}
       rel="noopener noreferrer"
-      className={`relative lg:!h-[2.1rem] 2xl:!h-12 4xl:!h-[3.2rem] lg:!py-1 2xl:!py-2 4xl:!py-3 lg:!px-4 2xl:!px-9 4xl:!px-10 ${primaryBtn} ${isActive} ${className}`}
+      className={`relative rounded-none lg:!h-[2.1rem] 2xl:!h-12 4xl:!h-[3.2rem] lg:!py-1 2xl:!py-2 4xl:!py-3 lg:!px-4 2xl:!px-9 4xl:!px-10 ${primaryBtn} ${isActive} ${className}`}
       {...rest}
     >
       {pathname === href && (
