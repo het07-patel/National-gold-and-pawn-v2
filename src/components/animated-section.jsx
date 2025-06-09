@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+  import CustomImage from "./customImage";
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -48,7 +48,7 @@ const AnimatedSection = ({
         variants={cardAnimation}
         className="w-full xxs:w-full lg:w-1/2 aspect-square relative"
       >
-        <Image
+        <CustomImage
           fill
           priority
           src={img}

@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -37,7 +38,7 @@ const AlternatingFeatureBlock = ({
   return (
     <section
       ref={ref}
-      className={`flex ${layoutDirection} items-center justify-between gap-6 text-basewhite  ${className}`}
+      className={`flex ${layoutDirection} items-center justify-between gap-6 text-basewhite ${className}`}
     >
       {/* Image Section */}
       <motion.div
@@ -64,11 +65,11 @@ const AlternatingFeatureBlock = ({
         className="w-full lg:w-[45%] flex flex-col text-center lg:justify-center lg:items-start  lg:text-left "
       >
         <h2
-          className={`text-xl md:text-3xl md:mb-2 2xl:text-4xl lg:leading-[50px] 2xl:leading-[60px] font-bold${titleClassName}`}
+          className={`text-xl md:text-3xl md:mb-2 2xl:text-4xl lg:leading-[50px] 2xl:leading-[60px] font-bold ${titleClassName}`}
         >
           {title}
         </h2>
-        <div className="space-y-0.5 mb-3 !text-left ">
+        <div className="space-y-0.5 mb-3 !text-left">
           <p className="text-center lg:text-start  md:text-md lg:text-lg 2xl:text-[24px] py-2">
             {description}
           </p>

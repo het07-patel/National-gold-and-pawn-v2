@@ -10,7 +10,7 @@ const reasonsToTrust = [
 
 export default function WhyTrustUs() {
   return (
-    <section className="text-white py-16 px-4 md:px-16">
+    <section className="text-white py-8 sm:py-6 md:py-8 lg:py-14 px-4 md:px-16">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold leading-tight mb-3">
           Why You Should Trust Us
@@ -21,17 +21,17 @@ export default function WhyTrustUs() {
         </p>
       </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-8 text-center">
         {reasonsToTrust.map((reason) => (
             <div
             key={reason.id}
-            className="relative p-[2px] rounded-md bg-gradient-to-br from-primary to-approxblack"
+            className="relative p-[2px] rounded-lg bg-gradient-to-br from-primary to-approxblack"
             >
-            <div className="bg-gradient-to-br from-primary to-approxblack p-6 rounded-md h-full">
-                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-[#01030A] border border-[#C2963A] w-10 h-10 flex items-center justify-center rounded text-xl font-bold text-[#C2963A]">
+            <div className="bg-baseblack p-8 rounded-lg h-full">
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-baseblack border border-primary w-10 h-10 flex items-center justify-center rounded text-xl font-bold text-primary">
                 {reason.id}
                 </div>
-                <p className="mt-6 text-sm font-medium text-white">{reason.text}</p>
+                <p className="mt-6 text-[16px] md:text-[17px] 2xl:text-[20px] font-medium text-white">{reason.text}</p>
             </div>
             </div>
         ))}
