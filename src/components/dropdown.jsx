@@ -36,10 +36,10 @@ const DropDown = ({ title, menuList, isDropDownOpen, setIsDropDownOpen }) => {
   useClickOutside(menuRef, () => setIsDropDownOpen(false));
 console.log(title,"title")
   return (
-  <div className="relative w-auto flex justify-center" ref={menuRef}>
+  <div className="relative w-full flex justify-center" ref={menuRef}>
     <HeaderLinkButton
       onClick={handleDropDownToggle}
-      className="hover:text-white">
+      className="hover:text-white w-full">
       <div className="gap-1.5 flex items-center">
         {title}
         {isDropDownOpen ? (
@@ -60,7 +60,7 @@ console.log(title,"title")
             <li className={`w-full`} key={i}>
               {x.href ? (
                 <Link
-                  className={`block w-full leading-5 text-[15px] 2xl:text-lg text-black  transition-all font-normal bg-lightslate  p-[9px] 2xl:p-[10px] px-4 ${
+                  className={`block w-full leading-5 text-[15px] 2xl:text-lg text-black  transition-all font-normal bg-lightslate  p-[9px] 2xl:p-[10px] p-4 ${
                     activeItem?.href && activeItem?.href === x?.href
                       ? "!text-white rounded-lg bg-black"
                       : "hover:bg-black hover:text-white hover:rounded-lg"
