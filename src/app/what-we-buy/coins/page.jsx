@@ -66,8 +66,8 @@ export default function Coins()
       </div>
 
       <div className="container max-w-7xl px-4 text-center py-8 sm:py-8 md:py-12 lg:py-12 2xl:py-16 mt-6">
-        <p className="text-4xl font-bold leading-tight">
-           Your Gateway to<GradientText text=" Precious Metal Investments" />
+        <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight">
+          <GradientText text=" Precious Metal Investments" />
         </p>
         <h2 className="text-xl md:text-2xl py-6 sm:py-4 md:py-6 lg:py-10">
           Secure your future with our premium selection of authentic gold and silver coins, perfect for collectors and investors alike.
@@ -93,7 +93,7 @@ export default function Coins()
                 </div>
             </div>
         <section className="container max-w-[7xl] text-center p-10 p-10 md:p-14 xl:p-12 2xl:p-16">
-            <p className="text-3xl md:text-4xl font-bold leading-tight">
+            <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight">
               <GradientText text="Rare Collectible Coins" />
             </p>
 
@@ -127,8 +127,8 @@ export default function Coins()
 
             {categoryData.alternatingFeature ? (
               <section className="container p-10 md:p-14 xl:p-12 2xl:p-16">
-                <h3 className="text-2xl md:text-3xl lg:text-3xl 2xl:text-4xl mb-6 md:mb-16 2xl:mb-24 text-center text-basewhite font-bold">
-                  {categoryData.alternatingFeature.title || "Why Choose Tele Gold Jewelers?"}
+                <h3 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl uppercase mb-6 md:mb-16 2xl:mb-24 text-center text-basewhite font-bold">
+                  {categoryData.alternatingFeature.title || "Why Choose Us?"}
                 </h3>
                 <div className="space-y-8 lg:space-y-24">
                   {categoryData.alternatingFeature.feature.map((feature, i) => (

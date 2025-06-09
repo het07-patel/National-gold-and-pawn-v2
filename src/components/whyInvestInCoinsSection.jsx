@@ -52,7 +52,7 @@ export default function WhyInvestInCoins() {
       />
 
       <div className="relative z-10 text-center text-white px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">Why Invest in Gold & Silver Coins?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold uppercase leading-tight mb-10">Why Invest in Gold & Silver Coins?</h2>
         <div className="flex justify-center">
           <Swiper
             modules={[Autoplay]}

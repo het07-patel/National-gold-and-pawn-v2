@@ -5,6 +5,8 @@ export const AlternatingFeatureBlock = dynamic(() => import("./alternatingFeatur
 
 export const AnimatedSection = dynamic(() => import("./animated-section"), { ssr: false });
 
+export const Animation = dynamic(() => import("./AnimatedSection"), { ssr: false });
+
 export const Button = dynamic(() => import("./button"), { ssr: false });
 
 export const DropDown = dynamic(() => import("./dropdown"), { ssr: false });

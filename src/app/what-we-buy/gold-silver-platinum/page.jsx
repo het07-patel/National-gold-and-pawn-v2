@@ -54,7 +54,7 @@ export default function GoldSilverPlatinum()
       <MetalCategoriesSection/>
 
       <div className="container px-4 text-center py-4 md:py-6 xl:py-10 2xl:py-10">
-          <p className="text-4xl font-semibold leading-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold uppercase leading-tigh">
               Your Trusted Source for <GradientText text="Gold, Silver & Platinum" />
           </p>
           <h2 className="text-xl md:text-2xl mt-4 mb-4 sm:mb-6 md:mb-8 lg:mb-12">

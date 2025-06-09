@@ -9,7 +9,7 @@ import { CustomImage } from "./dynamiComponents";
 export default function JewelryCarousel({ title = "", swiperItems = [] }) {
   return (
     <section className="py-8 sm:py-8 md:py-12 lg:py-12 2xl:py-16 mt-6 text-center font-bold leading-tight">
-      <h3 className="text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-10">
+      <h3 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-6 md:mb-10">
         {title}
       </h3>
       <div className="mx-auto px-4 md:px-6 lg:px-8">

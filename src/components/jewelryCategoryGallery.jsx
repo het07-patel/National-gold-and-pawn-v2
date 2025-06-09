@@ -40,7 +40,7 @@ export default function JewelryCategoryGallery() {
   return (
     <section className="py-12 px-4 sm:px-6 md:px-12 lg:px-16 textwhite">
     <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold leading-tight mb-3">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-3">
           <GradientText text="Categories"/>
         </h2>
         <p className="max-w-2xl mx-auto text-basewhite text-[14px] md:text-[17px] 2xl:text-[20px] text-base">

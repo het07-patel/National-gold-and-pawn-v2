@@ -7,7 +7,7 @@ export default function CraftsmanshipSection() {
   return (
     <section className="container text-white px-6 max-w-8xl mx-auto py-8 sm:py-8 md:py-12 lg:py-12 2xl:py-16 mt-6">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold leading-tight mb-3">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-3">
           Expert Craftsmanship <GradientText text="in Every Detail" />
         </h2>
         <p className="text-[14px] md:text-[17px] 2xl:text-[20px] max-w-2xl mx-auto text-basewhite">

@@ -13,7 +13,7 @@ export default function CategoryFeatureSection({
   return (
     <section className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 xl:px-16">
       {sectionHeading && (
-        <h2 className="font-semibold text-center text-4xl font-semibold leading-tight text-white lg:py-12">
+        <h2 className="text-center text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight text-white lg:py-12">
           {sectionHeading}
         </h2>
       )}
