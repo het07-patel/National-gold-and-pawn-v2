@@ -12,8 +12,7 @@ import watchBackground from "@/assets/images/watches/watch-background.webp";
 import watchbg from "@/assets/images/watches/watch-bg2.webp";
 import footerImg1 from "@/assets/images/watches/footer1-img.webp";
 import { WatchesSwiper } from "@/components/dynamiComponents";
-import { AnimatedSection } from "@/components/dynamiComponents";
-import { GradientText } from "@/components/dynamiComponents";
+import { Animation } from "@/components/dynamiComponents";
 import CustomImage from "@/components/customImage";
 
 export default function Watches() {
@@ -81,7 +80,7 @@ export default function Watches() {
         <span className="bg-gradient-to-r from-[#eb2a1d] to-[#1d46eb] bg-clip-text text-transparent"> Elegance</span></h3>
         <section>
           <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-10 2xl:pt-18">
-            <AnimatedSection {...animatedContent[0]} />
+            <Animation {...animatedContent[0]} />
           </div>
         </section>
       </section>

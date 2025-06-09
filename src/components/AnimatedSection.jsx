@@ -9,7 +9,7 @@ import {
 } from "@/utils/common";
 import { CustomImage } from "./dynamiComponents";
 
-const AnimatedSection = ({
+const Animation = ({
   description = [],
   animatedClass = "",
   points = [],
@@ -131,4 +131,4 @@ const AnimatedSection = ({
   );
 };
 
-export default AnimatedSection;
+export default Animation;

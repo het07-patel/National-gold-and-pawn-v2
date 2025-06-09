@@ -27,7 +27,7 @@ export default function MetalCategoriesSection() {
   return (
     <section className="text-white py-12">
       <div className="text-center mb-12 px-4">
-        <p className="text-4xl font-semibold leading-tight mb-3">
+        <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-3">
            <GradientText text="Discover Our Precious Metals" />
         </p>
         <h2 className="text-xl md:text-2xl">
