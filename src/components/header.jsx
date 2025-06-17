@@ -34,6 +34,10 @@ const Header = () => {
       href: "/what-we-buy/electronics-and-tools",
       title: "Electronics and Tools",
     },  
+        {
+      href: "/what-we-buy/bullion",
+      title: "Bullion",
+    },  
   ];
 
   const menuList = [
@@ -92,7 +96,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block">
-            <div className="backdrop-blur-lg bg-white/20 border border-white/20 rounded-lg  gap-0 2xl:gap-0 flex items-center ">
+            <div className="backdrop-blur-lg bg-white/20 border border-white/20 rounded-lg  gap-0 2xl:gap-0 flex items-center overflow-hidden">
               {menuList.map((item) =>
                 item.dropDown ? (
                   <div key={item.label}>
