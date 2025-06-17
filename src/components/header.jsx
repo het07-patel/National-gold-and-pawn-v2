@@ -33,7 +33,11 @@ const Header = () => {
     {
       href: "/what-we-buy/electronics-and-tools",
       title: "Electronics and Tools",
-    },  
+    },
+        {
+      href: "/what-we-buy/antiques",
+      title: "Antiques",
+    },    
         {
       href: "/what-we-buy/bullion",
       title: "Bullion",
