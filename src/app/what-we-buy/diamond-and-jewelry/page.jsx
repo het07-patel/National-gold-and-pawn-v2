@@ -6,52 +6,60 @@ import slide2 from "@/assets/images/what-we-buy/diamond-jewelry/slide-2.webp";
 import slide3 from "@/assets/images/what-we-buy/diamond-jewelry/slide-3.webp";
 import slide4 from "@/assets/images/what-we-buy/diamond-jewelry/slide-4.webp";
 import slide5 from "@/assets/images/what-we-buy/diamond-jewelry/slide-5.webp";
+import slide6 from "@/assets/images/what-we-buy/diamond-jewelry/slide-6.webp";
 import featureImg1 from "@/assets/images/what-we-buy/diamond-jewelry/feature-1.webp";
 import {JewelryCarousel,
   JewelryCategoryGallery,VisitUs,
   HighlightSection,CategoryFeatureSection} from "@/components/dynamiComponents";
+import FullScreenVideo from "@/components/FullScreenVideo";
 
 export default function DiamondAndJewelry()
 {
     const jewelryCarousel = {
-    title: "From Pawn to Prestige: Our Finest Picks",
+    title: "Value Beyond Sparkle",
     swiperItems: [
       {
-        title: "Pendant Necklace",
+        title: "Rings",
         imgSrc: slide1,
-        altAttr: "Pendant Necklace",
-        titleAttr: "Pendant Necklace",
+        altAttr: "Rings",
+        titleAttr: "Rings",
       },
       {
-        title: "Tennis Necklace",
+        title: "Necklaces",
         imgSrc: slide2,
-        altAttr: "Tennis Necklace",
-        titleAttr: "Tennis Necklace",
+        altAttr: "Necklaces",
+        titleAttr: "Necklaces",
       },
       {
-        title: "Choker Necklace",
+        title: "Bracelets",
         imgSrc: slide3,
-        altAttr: "Choker Necklace",
-        titleAttr: "Choker Necklace",
+        altAttr: "Bracelets",
+        titleAttr: "Bracelets",
       },
       {
-        title: "Bib Necklace",
+        title: "Earrings",
         imgSrc: slide4,
-        altAttr: "Bib Necklace",
-        titleAttr: "Bib Necklace",
+        altAttr: "Earrings",
+        titleAttr: "Earrings",
       },
       {
-        title: "Station Necklace",
+        title: "Watches",
         imgSrc: slide5,
-        altAttr: "Station Necklace",
-        titleAttr: "Station Necklace",
+        altAttr: "Watches",
+        titleAttr: "Watches",
+      },
+      {
+        title: "Custom & Vintage",
+        imgSrc: slide6,
+        altAttr: "Custom & Vintage",
+        titleAttr: "Custom & Vintage",
       },
     ],
   };
   const categoryFeatures = [
     {
-      title: "Elegant Craftsmanship",
-      description: "This exquisite piece of jewelry embodies elegance and timeless craftsmanship. Designed with precision, it features a harmonious blend of fine metals and sparkling gemstones that catch the light from every angle. Whether worn for a special occasion or as a daily statement, this piece adds a touch of luxury and sophistication to any look. The intricate detailing highlights the artisan’s skill, making it not just an accessory, but a work of art. Perfect for those who appreciate beauty, tradition, and modern style, this jewelry item speaks volumes about refined taste and enduring quality.",
+      title: "Jewelry That Still Shines Bright",
+      description: "Your jewelry holds more than sparkle—it holds stories, value, and timeless beauty. Whether it's gold, silver, diamond, or gemstone, we’re here to help you turn it into something new. From cherished keepsakes to pieces you no longer wear, we offer honest evaluations and fair cash offers, right here in a place you can trust.",
       categoryImage: featureImg1,
       titleAttr: "Elegant Craftsmanship Image",
       altAttr: "Elegant Craftsmanship",
@@ -61,28 +69,28 @@ export default function DiamondAndJewelry()
   const highlightSection = { 
           titleAttr: "",
           altAttr: "",
-          title: "Understanding Ring Styles and Craftsmanship",
-          description: "Discover a variety of styles crafted with precision and care:",
+          title: "Explore Ring Styles That Speak for You",
+          description: "From iconic classics to personalized expressions, find rings that match every moment, mood, and milestone.",
           points: [
             {
-              title: "Timeless Elegance",
-              description: "Explore classic designs like diamond solitaires, eternity bands, and gemstone rings.",
+              title: "Iconic Classics",
+              description: "Think solitaires, halos, and eternity bands—timeless choices that never go out of style.",
             },
             {
-              title: "Special Occasions",
-              description: "Find rings for engagements, weddings, or anniversaries that capture life’s unforgettable moments.",
+              title: "Milestone Moments",
+              description: "Celebrate love, commitment, or anniversaries with rings designed to mark life’s biggest memories.",
             },
             {
-              title: "Everyday Glam",
-              description: "Choose stylish rings that offer sophistication and comfort for daily wear.",
+              title: "Modern Minimalism",
+              description: "Clean lines, bold shapes, and everyday-friendly designs that mix elegance with comfort.",
             },
             {
-              title: "Craftsmanship Excellence",
-              description: "Enjoy meticulously crafted rings made with high-quality materials and attention to detail.",
+              title: "Crafted to Last",
+              description: "Each ring is made with premium materials and detailed workmanship for lasting beauty and strength.",
             },
             {
-              title: "Custom Creations",
-              description: "Design your own unique ring with personalized touches, from stone selection to engraving options.",
+              title: "Made Just for You",
+              description: "Create your own story—customize every detail from diamond cut to engraving, making your ring truly one of a kind.",
             },
           ],
         };
@@ -92,8 +100,8 @@ export default function DiamondAndJewelry()
         <>
         <div>
             <Hero
-                title="Diamonds with Meaning. Jewelry with Value."
-                description="Discover trusted pawn services for jewelry, diamonds, and more. Offering fair appraisals, fast cash, and a wide selection of quality items – visit us today!"
+                title="Sell Diamond Jewelry with Confidence"
+                description="Get fair value for your diamond rings, earrings, necklaces, and more. We buy all styles and settings-modern or vintage-with expert evaluations and instant offers."
                 imageSrc={banner}
                 imgTitleAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
                 imgAltAttr="National Gold and Pawn | Diamonds, Watches, Jewelry" />
@@ -107,7 +115,7 @@ export default function DiamondAndJewelry()
         {categoryFeatures.map((feature, index) => (
         <CategoryFeatureSection
           key={index}
-          sectionHeading={index === 0 ? "Why Choose Our Jewelry?" : ""} 
+          sectionHeading={index === 0 ? "Trusted. Transparent. Local." : ""} 
           title={feature.title}
           description={feature.description}
           categoryImage={feature.categoryImage}
@@ -117,6 +125,12 @@ export default function DiamondAndJewelry()
       ))}
 
         <JewelryCategoryGallery />
+
+        <FullScreenVideo
+          videoSrc="/videos/diamond-jewelry.mp4"
+          titleAttr="Diamond and Jewelry Video"
+        />
+
         <HighlightSection
           title={highlightSection.title}
           description={highlightSection.description}

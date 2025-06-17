@@ -5,6 +5,7 @@ import featureImg from "@/assets/images/what-we-buy/coins/feature.webp";
 import featureImg1 from "@/assets/images/what-we-buy/coins/feature-1.webp";
 import coin2 from "@/assets/images/what-we-buy/coins/coin2.webp";
 import coin1 from "@/assets/images/what-we-buy/coins/coin1.webp";
+import coin3 from "@/assets/images/what-we-buy/coins/coin3.webp";
 import {MarqueeText,
   CustomImage,WhyInvestInCoins,
   VisitUs,AlternatingFeatureBlock,
@@ -13,11 +14,10 @@ import {MarqueeText,
 export default function Coins()
 {
             const animatedFeatures = {
-            title: "Unmatched Quality in Every Piece",
+            title: "The Value Behind Every Coin",
             description: [
-            "Our commitment to excellence ensures that every item is meticulously crafted with precision and passion. Each piece tells a story of timeless beauty and lasting value.",
-            "Experience the difference that expert craftsmanship makes in gold, silver, and platinum jewelry.Invest in jewelry that reflects your legacy and personal style.",
-            "Style it up or dress it down—our pieces are made to move with you.",
+            "Each coin has a story—whether it’s historical, collectible, or crafted from precious metals. We recognize what makes your pieces special.",
+            "From old silver dollars to rare international coins, we evaluate based on condition, rarity, and demand. Bring in your collection and let us help uncover its true market value.",
             ],
             img: coin2,
             altAttr: "Jewelry Crafting Process",
@@ -29,25 +29,25 @@ export default function Coins()
 
             const categoryData = {
               alternatingFeature: {
-                title: "Our Commitment to Quality & Trust",
+                title: "We Know Coin Worth",
                 feature: [
                   {
-                    title: "Trusted Experts in Precious Metals",
+                    title: "Bullion and Precious Metal Coins",
                     description:
-                      "With years of industry experience, our team provides accurate appraisals and honest assessments for your coins and jewelry.",
+                      "We buy gold, silver, and platinum coins based on purity and weight. Get top value for your investment-grade bullion.",
                     direction: "LTF",
                     imgSrc: featureImg1,
-                    titleAttr: "Experienced Appraisal",
-                    altAttr: "Appraisal Expert Image",
+                    titleAttr: "Bullion and Precious Metal Coins",
+                    altAttr: "Bullion and Precious Metal Coins",
                   },
                   {
-                    title: "Transparent Transactions, Exceptional Value",
+                    title: "Rare and Collectible Coins",
                     description:
-                      "We ensure every transaction is straightforward, secure, and offers the best market value for your gold, silver, or collectible coins.",
+                      "From antique U.S. coins to international rarities, we assess historical significance and collector demand to ensure a fair and informed offer.",
                     direction: "RTF",
                     imgSrc: featureImg,
-                    titleAttr: "Honest Deals Image",
-                    altAttr: "Customer Transaction",
+                    titleAttr: "Rare and Collectible Coins",
+                    altAttr: "Rare and Collectible Coins",
                   },
                 ],
               },
@@ -57,8 +57,8 @@ export default function Coins()
         <>
         <div>
         <Hero
-          title="Discover Value in Every Coin"
-          description="Whether you're a seasoned collector or a first-time investor, explore our diverse range of coins—from rare finds to gold and silver bullion."
+          title="Sell Rare Coins with Confidence"
+          description="From collectible coins to precious metal currency, we offer expert evaluations and fair deals. Whether you're selling a single piece or a full collection, we’re here to help."
           imageSrc={banner}
           imgTitleAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
           imgAltAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
@@ -67,10 +67,10 @@ export default function Coins()
 
       <div className="container max-w-7xl px-4 text-center py-8 sm:py-8 md:py-12 lg:py-12 2xl:py-16 mt-6">
         <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight">
-          <GradientText text=" Precious Metal Investments" />
+          Your Coins,<GradientText text=" Our Expertise" />
         </p>
         <h2 className="text-xl md:text-2xl py-6 sm:py-4 md:py-6 lg:py-10">
-          Secure your future with our premium selection of authentic gold and silver coins, perfect for collectors and investors alike.
+          We bring years of experience in evaluating coins—rare, collectible, or precious metal—offering honest guidance, fair pricing, and fast payouts you can trust.
         </h2>
       <AnimatedSection
         {...animatedFeatures}
@@ -94,11 +94,11 @@ export default function Coins()
             </div>
         <section className="container max-w-[7xl] text-center p-10 p-10 md:p-14 xl:p-12 2xl:p-16">
             <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight">
-              <GradientText text="Rare Collectible Coins" />
+              Coins That <GradientText text="Hold Value" />
             </p>
 
             <h2 className="text-xl md:text-2xl py-6 sm:py-4 md:py-6 lg:py-10">
-              Invest in top-grade gold and silver bullion — trusted by collectors and valued for their lasting worth and purity.
+              From silver to rare collectibles, we recognize and pay for coins with lasting market and historical worth.
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-start text-left">
@@ -110,13 +110,13 @@ export default function Coins()
                   className="w-full h-auto rounded-lg sm:rounded-xl object-cover"
                 />
                 <p className="mt-4 text-[14px] md:text-[17px] 2xl:text-[20px] leading-relaxed pt-6">
-                  Our experts carefully assess your pocket watch based on its condition, rarity, and craftsmanship to offer you the best possible value. Whether it's a classic heirloom or a rare collector’s item, we ensure a transparent, fair process. Trust us to help you unlock the true worth of your timeless treasure.
-                </p>
+                 Whether it's gold, silver, or a rare collector’s piece, we assess each coin with precision and care. Our expert team provides transparent evaluations and pays competitive rates based on real-time market value and historical significance.
+                 </p>
               </div>
 
               <div className="flex justify-center items-center">
                 <CustomImage
-                  srcAttr={coin2}
+                  srcAttr={coin3}
                   titleAttr=""
                   altAttr="Silver collectible coins"
                   className="w-full max-w-[500px] h-auto rounded-lg sm:rounded-x object-cover"
@@ -127,8 +127,8 @@ export default function Coins()
 
             {categoryData.alternatingFeature ? (
               <section className="container p-10 md:p-14 xl:p-12 2xl:p-16">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl uppercase mb-6 md:mb-16 2xl:mb-24 text-center text-basewhite font-bold">
-                  {categoryData.alternatingFeature.title || "Why Choose Us?"}
+                <h3 className="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-extrabold uppercase leading-tight text-white lg:py-12">
+                  {categoryData.alternatingFeature.title}
                 </h3>
                 <div className="space-y-8 lg:space-y-24">
                   {categoryData.alternatingFeature.feature.map((feature, i) => (

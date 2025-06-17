@@ -53,10 +53,10 @@ export default function Watches() {
   const animatedContent = [
     {
       img: watch1,
-      title: "The Art and Allure of Classic Watches",
+      title: "Watches That Hold Their Worth",
       altAttr: "",
       description: [
-        "Watches have always been more than mere timekeepers—they are a reflection of personal style, craftsmanship, and history. From the intricate gears of mechanical movements to the refined beauty of vintage pocket watches, each timepiece tells a story. Whether forged from gleaming silver, aged bronze, or polished steel, classic watches exude a sense of timeless elegance that transcends trends. Their detailed engravings and delicate hands speak to an era when artistry and precision were inseparable. ",
+        "Luxury or casual, watches are more than just accessories—they're assets. We buy timepieces that blend craftsmanship, brand value, and lasting appeal. From Rolex and Tag Heuer to Apple and Seiko, bring your watch in for a quick, honest evaluation and get paid what it’s really worth—on the spot. ",
       ],
 
       direction: "RTF",
@@ -67,8 +67,8 @@ export default function Watches() {
     <>
       <div>
         <Hero
-          title="Elevate Your Style with Iconic Timepieces "
-          description="Get the most for your timepiece with fast cash offers, expert insight, and a wide range of certified luxury watches."
+          title="Elevate Your Everyday with Timeless Timepieces"
+          description="Sell your watch with ease—trusted buyers, fair value, and a smooth experience that makes every second count."
           imageSrc={banner}
           imgTitleAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
           imgAltAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
@@ -76,8 +76,8 @@ export default function Watches() {
       </div>
 
       <section className="lg:text-6xl text-center pt-10 md:pt-14 xl:pt-16 2xl:pt-24 text-2xl">
-       <h3 className="my-6 md:mb-9 lg:mt-0 text-center text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-black uppercase">Timeless 
-        <span className="bg-gradient-to-r from-[#eb2a1d] to-[#1d46eb] bg-clip-text text-transparent"> Elegance</span></h3>
+       <h3 className="my-6 md:mb-9 lg:mt-0 text-center text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-black uppercase">Sell Luxury & Everyday
+        <span className="bg-gradient-to-r from-[#eb2a1d] to-[#1d46eb] bg-clip-text text-transparent"> Watches in Utica</span></h3>
         <section>
           <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-10 2xl:pt-18">
             <Animation {...animatedContent[0]} />
@@ -97,15 +97,15 @@ export default function Watches() {
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-light tracking-wide mb-2 sm:mb-3 md:mb-4">
             LUXURY TIMEKEEPERS
           </h2>
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold mt-1 sm:mt-2">
-            ELITE WATCHES
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold uppercase mt-1 sm:mt-2">
+            More Than Just a
           </h3>
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8">
-            REVEALED
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold uppercase mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8">
+            Timepiece Trade
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed px-2 sm:px-4 md:px-6 lg:px-8">
-            Discover the ultimate blend of precision and elegance with our
-            luxury timekeepers, unveiling elite watches for connoisseurs.
+            We value what your watch represents—style, heritage, and craftsmanship.
+            Whether you're selling or just exploring options, we’re here to guide you.
           </p>
         </div>
       </div>
@@ -128,17 +128,12 @@ export default function Watches() {
 
             {/* Text Content */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left mt-5 lg:mt-20 xl:mt-18 ">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 lg:leading-[50px] 2xl:leading-[60px]">
-                TIMELESS STYLE
+              <h2 className="text-2xl sm:text-3xl font-bold uppercase mb-4 lg:leading-[50px] 2xl:leading-[60px]">
+                Timeless. Trusted. Local.
               </h2>
               <p className="leading-relaxed text-sm sm:text-base max-w-xl">
-                From boardroom to weekend escapes, this watch complements every
-                moment. Featuring a refined dial, durable construction, and a
-                design that never goes out of style, it's more than a timepiece
-                — it’s a statement. Built with precision movement and premium
-                materials, it offers both reliability and elegance. Whether
-                you're dressing up or keeping it casual, this watch adapts to
-                every occasion with effortless style.
+                We’re more than buyers—we’re your neighborhood experts in watches. 
+                From classic heirlooms to modern wearables, we offer honest insights, fair value, and a personal touch you won’t find online.
               </p>
             </div>
           </div>

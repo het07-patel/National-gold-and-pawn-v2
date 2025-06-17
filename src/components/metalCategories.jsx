@@ -28,10 +28,10 @@ export default function MetalCategoriesSection() {
     <section className="text-white py-12">
       <div className="text-center mb-12 px-4">
         <p className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-3">
-           <GradientText text="Discover Our Precious Metals" />
+           Fast, Fair, and <GradientText text="Transparent Offers" />
         </p>
         <h2 className="text-xl md:text-2xl">
-          "Gold, silver, and platinum — where beauty meets brilliance. Choose your signature metal."
+          We provide on-the-spot evaluations using current market rates. Expect clear explanations, no-pressure offers, and immediate payouts for your gold, silver, and platinum—every time you visit.
         </h2>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-3 md:grid-cols-3 gap-4 sm:gap-4 md:gap-8 px-6">

@@ -19,10 +19,8 @@ export default function NewInCollectionSection() {
             >
             <div className="absolute inset-0 bg-black opacity-50 z-0 rounded-lg sm:rounded-xl"></div>
             <div className="relative bg-opacity-80 p-12 z-10">
-                <p className="text-2xl font-semibold tracking-wide mb-4 text-white">Distinguished Collections</p>
-                <button className="px-6 py-2 bg-basewhite text-baseblack rounded-lg font-semibold hover:bg-primary hover:text-white transition">
-                Discover Now
-                </button>
+                <p className="text-2xl font-semibold tracking-wide mb-4 text-basewhite">Distinguished Collections</p>
+                <p className="text-xl font-semibold mb-4 text-basewhite">" Where Every piece of jewelry tells a story"</p>
             </div>
         </div>
 
