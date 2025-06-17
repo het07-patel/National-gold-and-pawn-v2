@@ -8,11 +8,11 @@ export default function CraftsmanshipSection() {
     <section className="container text-white px-6 max-w-8xl mx-auto py-8 sm:py-8 md:py-12 lg:py-12 2xl:py-16 mt-6">
       <div className="text-center mb-12">
         <h2 className="text-2xl md:text-3xl lg:text-5xl 2xl:text-6xl font-bold uppercase leading-tight mb-3">
-          Expert Craftsmanship <GradientText text="in Every Detail" />
+          Hidden Wealth in <GradientText text="Precious Metals " />
         </h2>
         <p className="text-[14px] md:text-[17px] 2xl:text-[20px] max-w-2xl mx-auto text-basewhite">
-          Discover the artistry behind our gold, silver, and platinum pieces — where timeless design meets precision craftsmanship to create jewelry that tells a story.
-        </p>
+          Old, unused, or broken—your gold, silver, and platinum may be worth more than you think. Get paid what your metal is truly worth.
+          </p>
       </div>
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         <div className="relative w-full lg:w-1/2 flex justify-center">
@@ -38,13 +38,11 @@ export default function CraftsmanshipSection() {
 
         <div className="text-center lg:text-left max-w-2xl">
           <h2 className="text-lightgold text-2xl md:text-3xl md:mb-2 2xl:text-4xl lg:leading-[60px] 2xl:leading-[60px] font-semibold mb-4">
-            Tradition Cared For Since 1970
+            When Weight Becomes Worth
           </h2>
           <p className="text-[14px] md:text-[17px] 2xl:text-[20px] mb-6">
-            At our pawn shop, we believe exceptional craftsmanship speaks volumes. Our collection of gold, silver, and platinum jewelry is carefully curated and inspected for quality, authenticity, and timeless appeal. Each piece tells a story—crafted with precision, attention to detail, and enduring value. <br />
-            Whether you're looking to buy, sell, or pawn, we ensure that every item reflects both artistic excellence and smart investment potential. From vintage heirlooms to modern designs, our expert team evaluates each item to offer you honest appraisals and trustworthy service. Experience luxury that lasts, with craftsmanship you can see and value you can feel. <br />
-            We value the beauty and integrity of fine jewelry, ensuring customers receive both exceptional design and lasting investment with every transaction.
-          </p>
+            Your gold, silver, and platinum pieces—whether broken, outdated, or collectible—still hold real value. We evaluate based on weight, purity, and market rates to offer top-dollar payouts. From coins and bullion to jewelry and scrap, we make the process easy, transparent, and rewarding. Get instant cash with no guesswork involved.
+            </p>
         </div>
       </div>
     </section>

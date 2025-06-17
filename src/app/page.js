@@ -144,6 +144,7 @@ const productShowCase = {
     "Visit our store and explore an exclusive collection of fine jewelry and watches. From classic, timeless designs to bold, statement pieces, we offer something for every taste and occasion. Our curated selection features high-quality craftsmanship and unique styles, ensuring you find the perfect accessory. Stop by today and discover the perfect piece to elevate your collection!",
   ],
   direction: "RTF",
+  imgClassName: "rounded-md",
 };
 export default function Home() {
   const router = useRouter();

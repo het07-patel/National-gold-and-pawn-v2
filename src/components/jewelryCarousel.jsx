@@ -41,11 +41,6 @@ export default function JewelryCarousel({ title = "", swiperItems = [] }) {
                 height={200}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-sm sm:text-base md:text-lg font-semibold text-center px-2">
-                  {item.title}
-                </p>
-              </div>
             </div>
           </SwiperSlide>
         ))}

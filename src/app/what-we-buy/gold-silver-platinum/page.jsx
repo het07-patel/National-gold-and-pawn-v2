@@ -12,10 +12,10 @@ import {MetalCategoriesSection,
 export default function GoldSilverPlatinum() 
 {
       const categoryFeatures = {
-        title: "Unmatched Quality in Every Piece",
+        title: "Get Paid What Your Metals Deserve",
         description: [
-        "Our commitment to excellence ensures that every item is meticulously crafted with precision and passion. Each piece tells a story of timeless beauty and lasting value.Experience the difference that expert craftsmanship makes in gold, silver, and platinum jewelry.Invest in jewelry that reflects your legacy and personal style.",
-        "We take pride in offering meticulously crafted items that combine elegance with durability, whether you're purchasing, pawning, or selling. Each item in our collection is inspected for authenticity, design integrity, and material quality, ensuring that you receive not only a stunning piece of jewelry but also a sound investment. ",
+        "Every piece of gold, silver, or platinum—whether it's broken, outdated, or no longer worn—holds real value. From jewelry and silverware to coins and bullion, we assess your items based on purity, weight, and current market rates.",
+        "Our process is simple, honest, and fast. You’ll receive a transparent evaluation and a competitive offer with no pressure. Walk in with your precious metals and walk out with instant cash and peace of mind.",
       ],
         img: featureImg,
         altAttr: "Jewelry Crafting Process",
@@ -32,8 +32,8 @@ export default function GoldSilverPlatinum()
     <>
       <div>
         <Hero
-          title="Trusted Experts in Gold, Silver & Platinum"
-          description="Discover unbeatable value with our premium collection of gold, silver, and platinum jewelry."
+          title="Trusted Buyers of Gold, Silver & Platinum"
+          description="Whether it's jewelry, coins, bullion, or scrap, we pay top dollar for your gold, silver, and platinum. Get fast, fair evaluations and instant cash with service you can count on."
           imageSrc={banner}
           imgTitleAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
           imgAltAttr="National Gold and Pawn | Diamonds, Watches, Jewelry"
@@ -55,10 +55,10 @@ export default function GoldSilverPlatinum()
 
       <div className="container px-4 text-center py-4 md:py-6 xl:py-10 2xl:py-10">
           <p className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold uppercase leading-tigh">
-              Your Trusted Source for <GradientText text="Gold, Silver & Platinum" />
+              We Buy It <GradientText text="All Here" />
           </p>
           <h2 className="text-xl md:text-2xl mt-4 mb-4 sm:mb-6 md:mb-8 lg:mb-12">
-            Explore our curated collection of timeless pieces in gold, silver, and platinum.
+            From tangled gold chains to silver flatware and platinum coins, we purchase all types of precious metals—regardless of condition. No item is too small or too old.
           </h2>
         <div>
             <AnimatedSection

@@ -9,32 +9,32 @@ import { CustomImage } from "./dynamiComponents";
 
 const reasons = [
   {
-    title: "Hedge Against Inflation",
-    description: "Precious metals retain their value over time, making them a reliable store of wealth.",
+    title: "Expert Coin Appraisals",
+    description: "Accurate evaluations by professionals who understand real value.",
   },
   {
-    title: "Liquidity & Global Recognition",
-    description: "Gold and silver coins are easily tradable and accepted worldwide.",
+    title: "Competitive Cash Offers",
+    description: "We pay top rates for all coin types.",
   },
   {
-    title: "Portfolio Diversification",
-    description: "Adding precious metals to your investments enhances financial stability.",
+    title: "All Coins Accepted",
+    description: "From bullion to collectible, we buy them all.",
   },
   {
-    title: "Historical & Collectible Value",
-    description: "Many coins hold historical significance, making them desirable.",
+    title: "No Pressure Process",
+    description: "Sell confidently with zero obligation or stress.",
   },
   {
-    title: "Tangible Asset Security",
-    description: "Unlike digital assets, coins offer physical ownership and stability.",
+    title: "Fast & Secure Payments",
+    description: "Walk out with cash the same day.",
   },
   {
-    title: "Long-Term Appreciation",
-    description: "Quality coins can appreciate over time, offering capital growth.",
+    title: "Trusted Local Reputation",
+    description: "Utica’s go-to coin buyer for honest deals.",
   },
   {
-    title: "Cultural and Artistic Appeal",
-    description: "Many coins are prized for their unique designs and craftsmanship.",
+    title: "Decades of Experience",
+    description: "Deep knowledge across rare and common coins.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function WhyInvestInCoins() {
       />
 
       <div className="relative z-10 text-center text-white px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold uppercase leading-tight mb-10">Why Invest in Gold & Silver Coins?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-bold uppercase leading-tight mb-10">Why Sell Coins With Us?</h2>
         <div className="flex justify-center">
           <Swiper
             modules={[Autoplay]}
@@ -87,7 +87,7 @@ export default function WhyInvestInCoins() {
             {reasons.map((item, index) => (
               <SwiperSlide key={index} className="mx-auto">
                 <div className="rounded-xl 2xl:rounded-[30px] bg-gradient-to-br from-primary to-approxblack p-[1.5px] max-w-[280px] w-full h-[200px]">
-                  <div className="bg-approxblack rounded-lg 2xl:rounded-[28px] px-6 py-8 sm:py-8 md:py-10 lg:py-12 h-full w-full flex flex-col justify-center items-center text-center">
+                  <div className="bg-approxblack rounded-lg 2xl:rounded-[28px] px-6 py-10 sm:py-10 md:py-12 h-full w-full flex flex-col justify-center items-center text-center">
                     <h3 className="text-lg font-semibold mb-3 text-white leading-tight">{item.title}</h3>
                     <p className="text-sm text-gray-300 leading-relaxed">{item.description}</p>
                   </div>
